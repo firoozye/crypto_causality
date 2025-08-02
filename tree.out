@@ -1,0 +1,63 @@
+.
+├── crypto_causality.pdf
+├── data
+│   ├── processed
+│   │   ├── ADAUSDT_1m_2024-01-01_2024-02-01.parquet
+│   │   ├── BNBUSDT_1m_2024-01-01_2024-02-01.parquet
+│   │   ├── BTCUSDT_1m_2024-01-01_2024-02-01.parquet
+│   │   ├── DOGEUSDT_1m_2024-01-01_2024-02-01.parquet
+│   │   ├── ETHUSDT_1m_2024-01-01_2024-02-01.parquet
+│   │   ├── SOLUSDT_1m_2024-01-01_2024-02-01.parquet
+│   │   └── XRPUSDT_1m_2024-01-01_2024-02-01.parquet
+│   └── raw
+├── examples
+│   ├── automated-gc-example.py
+│   ├── automated-gc.py
+│   ├── granger_analysis.py
+│   ├── run-analysis.py
+│   ├── visualize_causality.py
+│   └── visualize_results.py
+├── notebooks
+│   ├── crypto_diffs_exploration.ipynb
+│   ├── crypto_diffs_exploration.py
+│   ├── crypto_exploration.ipynb
+│   ├── crypto_exploration_old.py
+│   ├── crypto_exploration.py
+│   ├── crypto_qq.ipynb
+│   └── crypto_qq.py
+├── README.md
+├── requirements.txt
+├── src
+│   ├── analysis
+│   │   ├── causality.py
+│   │   ├── granger-causality.py
+│   │   ├── __init__.py
+│   │   ├── outliers.py
+│   │   ├── __pycache__
+│   │   │   ├── causality.cpython-312.pyc
+│   │   │   ├── __init__.cpython-312.pyc
+│   │   │   └── outliers.cpython-312.pyc
+│   │   └── stationarity.py
+│   ├── config.py
+│   ├── data
+│   │   ├── data-processor.py
+│   │   ├── downloader2.py
+│   │   ├── downloader.py
+│   │   ├── __init__.py
+│   │   └── __pycache__
+│   │       ├── downloader2.cpython-312.pyc
+│   │       └── downloader.cpython-312.pyc
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── config.cpython-312.pyc
+│   │   └── __init__.cpython-312.pyc
+│   ├── utils
+│   │   ├── helpers.py
+│   │   └── __init__.py
+│   └── visualization
+│       ├── causality-viz.py
+│       └── __init__.py
+├── tests
+└── tree.out
+
+15 directories, 46 files
