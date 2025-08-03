@@ -1,3 +1,4 @@
 *.pyc
 *~
 *.parquet
+notebooks/.ipynb_checkpoints

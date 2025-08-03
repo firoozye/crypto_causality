@@ -112,7 +112,7 @@ def plot_subplot_grid(crypto_data):
 
 
 # %%
-def load_all_crypto_data(data_dir="../data/processed/"):
+def load_all_crypto_data(data_dir="../../data/processed/"):
     all_data = {}
     for file in glob.glob(os.path.join(data_dir, "*.parquet")):
         symbol = os.path.basename(file).split('_')[0]

@@ -194,15 +194,15 @@ class GrangerCausalityAnalyzer:
                 coefs = []
                 pvals = []
                 for lag in range(max_lag):
-                    coef_idx = i + lag * len(data.columns)
-                    coefs.append(results.params[coef_idx][target_idx])
-                    pvals.append(results.pvalues[coef_idx][target_idx])
+                    # Access coefficients by target variable name
+                    coefs.append(results.params.loc[f'L{lag+1}.{col}', target])
+                    pvals.append(results.pvalues.loc[f'L{lag+1}.{col}', target])
 
                 coef_pvals[col] = pvals
                 # Use F-test or Chi-square test statistic
                 test_stats[col] = results.test_causality(
                     target, [col], kind="f"
-                ).test_statistic
+                ).pvalue
 
         return test_stats, coef_pvals, max_lag
 

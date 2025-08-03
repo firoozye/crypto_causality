@@ -12,8 +12,8 @@ from ..config import (SYMBOLS, INTERVAL, START_DATE, END_DATE,
 
 
 class CryptoDataDownloader:
-    def __init__(self, base_url: str = BASE_URL):
-        self.client = Client(base_url=base_url)
+    def __init__(self):
+        self.client = Client(None, None)
         self.ensure_directories()
 
     @staticmethod
@@ -36,7 +36,7 @@ class CryptoDataDownloader:
         while current_date < end_date:
             next_date = min(current_date + timedelta(minutes=1000), end_date)
             try:
-                klines = self.client.klines(
+                klines = self.client.get_klines(
                     symbol=symbol,
                     interval=interval,
                     startTime=int(current_date.timestamp() * 1000),
@@ -45,8 +45,8 @@ class CryptoDataDownloader:
                 )
                 all_klines.extend(klines)
             except Exception as e:
-                print(f"Error downloading {symbol} data for" +
-                      f"period {current_date}: {e}")
+                print(f"Error downloading {symbol} " +
+                      f" data for period {current_date}: {e}")
                 continue
 
             current_date = next_date
@@ -89,8 +89,8 @@ class CryptoDataDownloader:
             table = pa.Table.from_pandas(df)
             pq.write_table(
                 table,
-                os.path.join(PROCESSED_DATA_PATH, f"{symbol}_{interval}_\
-                             {start_date}_{end_date}.parquet")
+                os.path.join(PROCESSED_DATA_PATH, f"{symbol}_{interval}"+
+                    f"_{start_date}_{end_date}.parquet")
             )
             print(f"Saved {symbol} data to parquet")
 
