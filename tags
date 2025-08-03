@@ -13,7 +13,7 @@ ALPHA_CONSTANT	src/ewrls/ewrls.py	/^    ALPHA_CONSTANT = 100  # 1000 #E3 #100 #1
 ALPHA_CONSTANT	src/ewrls/ewrls_noewma_dependency.py	/^    ALPHA_CONSTANT = 100  # 1000 #E3 #100 #1E5$/;"	v	line:1120	language:Python	class:CR_RLS	access:public
 AutomatedGrangerAnalyzer	examples/automated-gc-example.py	/^class AutomatedGrangerAnalyzer:$/;"	c	line:25	language:Python	inherits:	access:public
 AutomatedGrangerCausality	examples/automated-gc.py	/^class AutomatedGrangerCausality:$/;"	c	line:7	language:Python	inherits:	access:public
-BASE_URL	src/config.py	/^BASE_URL = 'https:\/\/api.binance.com'$/;"	v	line:33	language:Python	access:public
+BASE_URL	src/config.py	/^BASE_URL = 'https:\/\/api.binance.com'$/;"	v	line:34	language:Python	access:public
 BreakDetector	src/ewrls/ewrls.py	/^class BreakDetector:$/;"	c	line:812	language:Python	inherits:	access:public
 BreakDetector	src/ewrls/ewrls_noewma_dependency.py	/^class BreakDetector:$/;"	c	line:812	language:Python	inherits:	access:public
 CR_RLS	src/ewrls/ewrls.py	/^class CR_RLS(EWRLSRidge):$/;"	c	line:1119	language:Python	inherits:EWRLSRidge	access:public
@@ -22,11 +22,11 @@ CausalityAnalyzer	src/analysis/causality.py	/^class CausalityAnalyzer:$/;"	c	lin
 CausalityAnalyzer	src/analysis/causality_bad_scipy.py	/^class CausalityAnalyzer:$/;"	c	line:14	language:Python	inherits:	access:public
 CausalityVisualizer	src/visualization/causality_viz.py	/^class CausalityVisualizer:$/;"	c	line:42	language:Python	inherits:	access:public
 CryptoDataDownloader	src/data/downloader.py	/^class CryptoDataDownloader:$/;"	c	line:14	language:Python	inherits:	access:public
-DEFAULT_WINDOW	src/config.py	/^DEFAULT_WINDOW = 30  # Default window size for rolling calculations$/;"	v	line:36	language:Python	access:public
+DEFAULT_WINDOW	src/config.py	/^DEFAULT_WINDOW = 30  # Default window size for rolling calculations$/;"	v	line:37	language:Python	access:public
 DELTA	src/ewrls/ewrls.py	/^DELTA = 1.0E-16  # epsilon \/delta very small number$/;"	v	line:1116	language:Python	access:public
 DELTA	src/ewrls/ewrls_noewma_dependency.py	/^DELTA = 1.0E-16  # epsilon \/delta very small number$/;"	v	line:1116	language:Python	access:public
 DataProcessor	src/data/data_processor.py	/^class DataProcessor:$/;"	c	line:15	language:Python	inherits:	access:public
-END_DATE	src/config.py	/^END_DATE = '2024-02-01'$/;"	v	line:30	language:Python	access:public
+END_DATE	src/config.py	/^END_DATE = '2024-02-01'$/;"	v	line:31	language:Python	access:public
 EPS	src/ewrls/ewrls.py	/^EPS = sys.float_info.epsilon$/;"	v	line:14	language:Python	access:public
 EPS	src/ewrls/ewrls_noewma_dependency.py	/^EPS = sys.float_info.epsilon$/;"	v	line:14	language:Python	access:public
 EPS2	src/ewrls/ewrls.py	/^EPS2 = 1 - np.nextafter(1., 0.)$/;"	v	line:15	language:Python	access:public
@@ -40,30 +40,30 @@ EWRLSChangePoint	src/ewrls/ewrls.py	/^class EWRLSChangePoint(EWRLSRidge):$/;"	c	
 EWRLSChangePoint	src/ewrls/ewrls_noewma_dependency.py	/^class EWRLSChangePoint(EWRLSRidge):$/;"	c	line:556	language:Python	inherits:EWRLSRidge	access:public
 EWRLSRidge	src/ewrls/ewrls.py	/^class EWRLSRidge(object):$/;"	c	line:22	language:Python	inherits:object	access:public
 EWRLSRidge	src/ewrls/ewrls_noewma_dependency.py	/^class EWRLSRidge(object):$/;"	c	line:22	language:Python	inherits:object	access:public
-FIGURE_SIZE	src/config.py	/^FIGURE_SIZE = (12, 8)$/;"	v	line:42	language:Python	access:public
+FIGURE_SIZE	src/config.py	/^FIGURE_SIZE = (12, 8)$/;"	v	line:43	language:Python	access:public
 FeatureNormalizer	src/ewrls/rls_utils.py	/^class FeatureNormalizer(object):$/;"	c	line:8	language:Python	inherits:object	access:public
 GrangerCausalityAnalyzer	src/analysis/granger_causality.py	/^class GrangerCausalityAnalyzer:$/;"	c	line:49	language:Python	inherits:	access:public
-INTERVAL	src/config.py	/^INTERVAL = '1m'  # Data granularity$/;"	v	line:28	language:Python	access:public
+INTERVAL	src/config.py	/^INTERVAL = '1d'  # Data granularity - changed to explore causality at different frequencies$/;"	v	line:29	language:Python	access:public
 LAMBDA_TOL	src/ewrls/ewrls.py	/^LAMBDA_TOL = 1E-7$/;"	v	line:18	language:Python	access:public
 LAMBDA_TOL	src/ewrls/ewrls_noewma_dependency.py	/^LAMBDA_TOL = 1E-7$/;"	v	line:18	language:Python	access:public
 LOGGER	src/ewrls/settings.py	/^LOGGER = logging.getLogger(__name__)$/;"	v	line:13	language:Python	access:public
 LOG_FILENAME	src/ewrls/settings.py	/^LOG_FILENAME = ERROR_DIRECTORY + f'run_{date}.log'$/;"	v	line:23	language:Python	access:public
-MAX_LAGS	src/config.py	/^MAX_LAGS = 10  # Maximum lags for causality analysis$/;"	v	line:37	language:Python	access:public
+MAX_LAGS	src/config.py	/^MAX_LAGS = 10  # Maximum lags for causality analysis$/;"	v	line:38	language:Python	access:public
 MyTestCase	src/ewrls/tests/test_break_detector.py	/^class MyTestCase(unittest.TestCase):$/;"	c	line:15	language:Python	inherits:unittest.TestCase	access:public
 MyTestCase	src/ewrls/tests/test_ewrls.py	/^class MyTestCase(unittest.TestCase):$/;"	c	line:13	language:Python	inherits:unittest.TestCase	access:public
 NORM_MAX	src/ewrls/ewrls.py	/^    NORM_MAX = 3.0$/;"	v	line:23	language:Python	class:EWRLSRidge	access:public
 NORM_MAX	src/ewrls/ewrls_noewma_dependency.py	/^    NORM_MAX = 3.0$/;"	v	line:23	language:Python	class:EWRLSRidge	access:public
 OutlierAnalyzer	src/analysis/outliers.py	/^class OutlierAnalyzer:$/;"	c	line:11	language:Python	inherits:	access:public
-PLOT_STYLE	src/config.py	/^PLOT_STYLE = 'seaborn'$/;"	v	line:41	language:Python	access:public
+PLOT_STYLE	src/config.py	/^PLOT_STYLE = 'seaborn'$/;"	v	line:42	language:Python	access:public
 PROCESSED_DATA_PATH	src/config.py	/^PROCESSED_DATA_PATH = os.path.join(ROOT_DIR, 'data', 'processed')$/;"	v	line:12	language:Python	access:public
 RAW_DATA_PATH	src/config.py	/^RAW_DATA_PATH = os.path.join(ROOT_DIR, 'data', 'raw')$/;"	v	line:11	language:Python	access:public
 ROOT_DIR	src/config.py	/^ROOT_DIR = Path(__file__).parent.parent$/;"	v	line:9	language:Python	access:public
 RecursiveOLS	src/ewrls/recursive_ols.py	/^class RecursiveOLS:$/;"	c	line:8	language:Python	inherits:	access:public
 ResultsVisualizer	examples/visualize_results.py	/^class ResultsVisualizer:$/;"	c	line:52	language:Python	inherits:	access:public
-SIGNIFICANCE_LEVEL	src/config.py	/^SIGNIFICANCE_LEVEL = 0.05  # Statistical significance threshold$/;"	v	line:38	language:Python	access:public
+SIGNIFICANCE_LEVEL	src/config.py	/^SIGNIFICANCE_LEVEL = 0.05  # Statistical significance threshold$/;"	v	line:39	language:Python	access:public
 SPAN_TOL	src/ewrls/ewrls.py	/^SPAN_TOL = 10$/;"	v	line:17	language:Python	access:public
 SPAN_TOL	src/ewrls/ewrls_noewma_dependency.py	/^SPAN_TOL = 10$/;"	v	line:17	language:Python	access:public
-START_DATE	src/config.py	/^START_DATE = '2024-01-01'$/;"	v	line:29	language:Python	access:public
+START_DATE	src/config.py	/^START_DATE = '2024-01-01'$/;"	v	line:30	language:Python	access:public
 SYMBOLS	src/config.py	/^SYMBOLS = ['BTCUSDT',$/;"	v	line:19	language:Python	access:public
 StateVariable	src/ewrls/ewrls.py	/^class StateVariable(object):$/;"	c	line:823	language:Python	inherits:object	access:public
 StateVariable	src/ewrls/ewrls_noewma_dependency.py	/^class StateVariable(object):$/;"	c	line:823	language:Python	inherits:object	access:public
@@ -74,6 +74,7 @@ TOL	src/ewrls/ewrls.py	/^TOL = 1E-10$/;"	v	line:16	language:Python	access:public
 TOL	src/ewrls/ewrls_noewma_dependency.py	/^TOL = 1E-10$/;"	v	line:16	language:Python	access:public
 VERBOSE	src/ewrls/ewrls.py	/^VERBOSE = False$/;"	v	line:19	language:Python	access:public
 VERBOSE	src/ewrls/ewrls_noewma_dependency.py	/^VERBOSE = False$/;"	v	line:19	language:Python	access:public
+X	notebooks/python/forecasting_model.py	/^X = forecasting_data.drop(columns=['target'])$/;"	v	line:92	language:Python	access:public
 [markdown]	notebooks/.ipynb_checkpoints/causality_analysis-checkpoint.py	/^# %% [markdown]$/;"	c	line:1	language:IPythonCell
 [markdown]	notebooks/.ipynb_checkpoints/causality_analysis-checkpoint.py	/^# %% [markdown]$/;"	c	line:101	language:IPythonCell
 [markdown]	notebooks/.ipynb_checkpoints/causality_analysis-checkpoint.py	/^# %% [markdown]$/;"	c	line:28	language:IPythonCell
@@ -85,14 +86,19 @@ VERBOSE	src/ewrls/ewrls_noewma_dependency.py	/^VERBOSE = False$/;"	v	line:19	lan
 [markdown]	notebooks/.ipynb_checkpoints/crypto_diffs_exploration-checkpoint.py	/^# %% [markdown]$/;"	c	line:162	language:IPythonCell
 [markdown]	notebooks/.ipynb_checkpoints/crypto_diffs_exploration-checkpoint.py	/^# %% [markdown]$/;"	c	line:90	language:IPythonCell
 [markdown]	notebooks/python/causality_analysis.py	/^# %% [markdown]$/;"	c	line:1	language:IPythonCell
-[markdown]	notebooks/python/causality_analysis.py	/^# %% [markdown]$/;"	c	line:106	language:IPythonCell
-[markdown]	notebooks/python/causality_analysis.py	/^# %% [markdown]$/;"	c	line:130	language:IPythonCell
-[markdown]	notebooks/python/causality_analysis.py	/^# %% [markdown]$/;"	c	line:179	language:IPythonCell
-[markdown]	notebooks/python/causality_analysis.py	/^# %% [markdown]$/;"	c	line:202	language:IPythonCell
-[markdown]	notebooks/python/causality_analysis.py	/^# %% [markdown]$/;"	c	line:221	language:IPythonCell
-[markdown]	notebooks/python/causality_analysis.py	/^# %% [markdown]$/;"	c	line:54	language:IPythonCell
-[markdown]	notebooks/python/causality_analysis.py	/^# %% [markdown]$/;"	c	line:73	language:IPythonCell
-[markdown]	notebooks/python/causality_analysis.py	/^# %% [markdown]$/;"	c	line:9	language:IPythonCell
+[markdown]	notebooks/python/causality_analysis.py	/^# %% [markdown]$/;"	c	line:10	language:IPythonCell
+[markdown]	notebooks/python/causality_analysis.py	/^# %% [markdown]$/;"	c	line:111	language:IPythonCell
+[markdown]	notebooks/python/causality_analysis.py	/^# %% [markdown]$/;"	c	line:132	language:IPythonCell
+[markdown]	notebooks/python/causality_analysis.py	/^# %% [markdown]$/;"	c	line:156	language:IPythonCell
+[markdown]	notebooks/python/causality_analysis.py	/^# %% [markdown]$/;"	c	line:205	language:IPythonCell
+[markdown]	notebooks/python/causality_analysis.py	/^# %% [markdown]$/;"	c	line:228	language:IPythonCell
+[markdown]	notebooks/python/causality_analysis.py	/^# %% [markdown]$/;"	c	line:247	language:IPythonCell
+[markdown]	notebooks/python/causality_analysis.py	/^# %% [markdown]$/;"	c	line:279	language:IPythonCell
+[markdown]	notebooks/python/causality_analysis.py	/^# %% [markdown]$/;"	c	line:313	language:IPythonCell
+[markdown]	notebooks/python/causality_analysis.py	/^# %% [markdown]$/;"	c	line:393	language:IPythonCell
+[markdown]	notebooks/python/causality_analysis.py	/^# %% [markdown]$/;"	c	line:409	language:IPythonCell
+[markdown]	notebooks/python/causality_analysis.py	/^# %% [markdown]$/;"	c	line:58	language:IPythonCell
+[markdown]	notebooks/python/causality_analysis.py	/^# %% [markdown]$/;"	c	line:77	language:IPythonCell
 [markdown]	notebooks/python/crypto_diffs_exploration.py	/^# %% [markdown]$/;"	c	line:1	language:IPythonCell
 [markdown]	notebooks/python/crypto_diffs_exploration.py	/^# %% [markdown]$/;"	c	line:147	language:IPythonCell
 [markdown]	notebooks/python/crypto_diffs_exploration.py	/^# %% [markdown]$/;"	c	line:162	language:IPythonCell
@@ -121,6 +127,12 @@ VERBOSE	src/ewrls/ewrls_noewma_dependency.py	/^VERBOSE = False$/;"	v	line:19	lan
 [markdown]	notebooks/python/crypto_qq.py	/^# %% [markdown]$/;"	c	line:181	language:IPythonCell
 [markdown]	notebooks/python/crypto_qq.py	/^# %% [markdown]$/;"	c	line:34	language:IPythonCell
 [markdown]	notebooks/python/crypto_qq.py	/^# %% [markdown]$/;"	c	line:53	language:IPythonCell
+[markdown]	notebooks/python/forecasting_model.py	/^# %% [markdown]$/;"	c	line:1	language:IPythonCell
+[markdown]	notebooks/python/forecasting_model.py	/^# %% [markdown]$/;"	c	line:124	language:IPythonCell
+[markdown]	notebooks/python/forecasting_model.py	/^# %% [markdown]$/;"	c	line:135	language:IPythonCell
+[markdown]	notebooks/python/forecasting_model.py	/^# %% [markdown]$/;"	c	line:37	language:IPythonCell
+[markdown]	notebooks/python/forecasting_model.py	/^# %% [markdown]$/;"	c	line:69	language:IPythonCell
+[markdown]	notebooks/python/forecasting_model.py	/^# %% [markdown]$/;"	c	line:95	language:IPythonCell
 __call__	src/ewrls/ewrls.py	/^    def __call__(self) -> float:$/;"	m	line:819	language:Python	class:BreakDetector	typeref:typename:float	access:public	signature:(self)
 __call__	src/ewrls/ewrls_noewma_dependency.py	/^    def __call__(self) -> float:$/;"	m	line:819	language:Python	class:BreakDetector	typeref:typename:float	access:public	signature:(self)
 __init__	examples/automated-gc-example.py	/^    def __init__(self, data_dir: str = None):$/;"	m	line:26	language:Python	class:AutomatedGrangerAnalyzer	access:public	signature:(self, data_dir: str = None)
@@ -244,7 +256,10 @@ analyze_all_pairs	examples/automated-gc-example.py	/^    def analyze_all_pairs($
 analyze_tvgc	examples/tvgc-example.py	/^def analyze_tvgc(crypto_data, pairs_to_test, window_size=500, test_mode=False):$/;"	f	line:72	language:Python	access:public	signature:(crypto_data, pairs_to_test, window_size=500, test_mode=False)
 analyze_tvgc	src/analysis/time_varying_granger.py	/^def analyze_tvgc(crypto_data, pairs_to_test, window_size=500):$/;"	f	line:85	language:Python	access:public	signature:(crypto_data, pairs_to_test, window_size=500)
 analyzer	notebooks/.ipynb_checkpoints/causality_analysis-checkpoint.py	/^analyzer = GrangerCausalityAnalyzer(combined_returns, max_lags=10)$/;"	v	line:71	language:Python	access:public
-analyzer	notebooks/python/causality_analysis.py	/^analyzer = GrangerCausalityAnalyzer(combined_returns, max_lags=10)$/;"	v	line:121	language:Python	access:public
+analyzer	notebooks/python/causality_analysis.py	/^analyzer = GrangerCausalityAnalyzer(combined_returns, max_lags=10)$/;"	v	line:147	language:Python	access:public
+asymmetric_analyzer	notebooks/python/causality_analysis.py	/^asymmetric_analyzer = GrangerCausalityAnalyzer(decomposed_returns, max_lags=10)$/;"	v	line:299	language:Python	access:public
+asymmetric_pairwise_results	notebooks/python/causality_analysis.py	/^asymmetric_pairwise_results = asymmetric_analyzer.run_pairwise_causality()$/;"	v	line:302	language:Python	access:public
+asymmetric_summary	notebooks/python/causality_analysis.py	/^asymmetric_summary = summarize_asymmetry(significant_asymmetric_results)$/;"	v	line:389	language:Python	access:public
 bench_ols_rls1	src/ewrls/recursive_ols.py	/^def bench_ols_rls1(y, X):$/;"	f	line:149	language:Python	access:public	signature:(y, X)
 bench_ols_rls2	src/ewrls/tests/test_ewrls.py	/^def bench_ols_rls2(y, X):$/;"	f	line:142	language:Python	access:public	signature:(y, X)
 beta_diff	src/ewrls/ewrls.py	/^    def beta_diff(self, param_tuple=(0.99, 3.5)):$/;"	m	line:725	language:Python	class:EWRLSChangePoint	access:public	signature:(self, param_tuple=(0.99, 3.5))
@@ -255,17 +270,21 @@ changing_means	src/ewrls/tests/test_break_detector.py	/^def changing_means():$/;
 changing_means_betas	src/ewrls/tests/test_break_detector.py	/^def changing_means_betas():$/;"	f	line:45	language:Python	access:public	signature:()
 chunk_size	src/ewrls/ewma.py	/^    chunk_size = 50$/;"	v	line:306	language:Python	access:public
 coef_pvals	notebooks/.ipynb_checkpoints/causality_analysis-checkpoint.py	/^test_stats, coef_pvals, optimal_lag = analyzer.run_multivariate_causality(target=target_crypto)$/;"	v	line:91	language:Python	access:public
-coef_pvals	notebooks/python/causality_analysis.py	/^test_stats, coef_pvals, optimal_lag = analyzer.run_multivariate_causality($/;"	v	line:191	language:Python	access:public
+coef_pvals	notebooks/python/causality_analysis.py	/^test_stats, coef_pvals, optimal_lag = analyzer.run_multivariate_causality($/;"	v	line:217	language:Python	access:public
 combined_returns	notebooks/.ipynb_checkpoints/causality_analysis-checkpoint.py	/^combined_returns = pd.DataFrame()$/;"	v	line:61	language:Python	access:public
-combined_returns	notebooks/python/causality_analysis.py	/^combined_returns = pd.DataFrame()$/;"	v	line:102	language:Python	access:public
+combined_returns	notebooks/python/causality_analysis.py	/^combined_returns = pd.DataFrame()$/;"	v	line:106	language:Python	access:public
+combined_returns	notebooks/python/causality_analysis.py	/^combined_returns = resampled_returns_1h$/;"	v	line:130	language:Python	access:public
 combined_returns	notebooks/python/crypto_exploration.py	/^combined_returns = pd.DataFrame()$/;"	v	line:164	language:Python	access:public
 combined_returns	notebooks/python/crypto_exploration_old.py	/^combined_returns = pd.DataFrame()$/;"	v	line:80	language:Python	access:public
+combined_returns	notebooks/python/forecasting_model.py	/^combined_returns = combined_returns.dropna()$/;"	v	line:67	language:Python	access:public
+combined_returns	notebooks/python/forecasting_model.py	/^combined_returns = pd.DataFrame()$/;"	v	line:63	language:Python	access:public
 concatenate_results	src/ewrls/ewrls.py	/^    def concatenate_results(self):$/;"	m	line:487	language:Python	class:EWRLSRidge	access:public	signature:(self)
 concatenate_results	src/ewrls/ewrls.py	/^    def concatenate_results(self):$/;"	m	line:803	language:Python	class:EWRLSChangePoint	access:public	signature:(self)
 concatenate_results	src/ewrls/ewrls_noewma_dependency.py	/^    def concatenate_results(self):$/;"	m	line:487	language:Python	class:EWRLSRidge	access:public	signature:(self)
 concatenate_results	src/ewrls/ewrls_noewma_dependency.py	/^    def concatenate_results(self):$/;"	m	line:803	language:Python	class:EWRLSChangePoint	access:public	signature:(self)
 create_causality_network	src/analysis/causality.py	/^    def create_causality_network(self) -> nx.DiGraph:$/;"	m	line:96	language:Python	class:CausalityAnalyzer	typeref:typename:nx.DiGraph	access:public	signature:(self)
 create_causality_network	src/analysis/causality_bad_scipy.py	/^    def create_causality_network(self) -> nx.DiGraph:$/;"	m	line:103	language:Python	class:CausalityAnalyzer	typeref:typename:nx.DiGraph	access:public	signature:(self)
+create_lagged_features	notebooks/python/forecasting_model.py	/^def create_lagged_features(df, target_col, lags=5):$/;"	f	line:74	language:Python	access:public	signature:(df, target_col, lags=5)
 create_lead_lag_summary	notebooks/python/crypto_exploration.py	/^def create_lead_lag_summary(returns_data, lags=50):$/;"	f	line:321	language:Python	access:public	signature:(returns_data, lags=50)
 create_lead_lag_summary	notebooks/python/crypto_exploration_old.py	/^def create_lead_lag_summary(returns_data, lags=50):$/;"	f	line:246	language:Python	access:public	signature:(returns_data, lags=50)
 create_ser	src/ewrls/ewrls.py	/^    def create_ser(self, index=None, name=None):$/;"	m	line:876	language:Python	class:StateVariable	access:public	signature:(self, index=None, name=None)
@@ -275,17 +294,21 @@ cross_validation	src/ewrls/ewrls.py	/^    def cross_validation(self):$/;"	m	line
 cross_validation	src/ewrls/ewrls_noewma_dependency.py	/^    def cross_validation(self):$/;"	m	line:1025	language:Python	class:EWRLSBatch	access:public	signature:(self)
 cross_validation	src/ewrls/ewrls_noewma_dependency.py	/^    def cross_validation(self):$/;"	m	line:616	language:Python	class:EWRLSChangePoint	access:public	signature:(self)
 crypto_data	notebooks/.ipynb_checkpoints/causality_analysis-checkpoint.py	/^crypto_data = load_all_crypto_data()$/;"	v	line:48	language:Python	access:public
-crypto_data	notebooks/python/causality_analysis.py	/^crypto_data = load_all_crypto_data()$/;"	v	line:89	language:Python	access:public
+crypto_data	notebooks/python/causality_analysis.py	/^crypto_data = load_all_crypto_data()$/;"	v	line:93	language:Python	access:public
 crypto_data	notebooks/python/crypto_exploration.py	/^crypto_data = load_all_crypto_data()$/;"	v	line:130	language:Python	access:public
 crypto_data	notebooks/python/crypto_exploration_old.py	/^    crypto_data = {}  # Initialize empty dict if loading fails$/;"	v	line:48	language:Python	access:public
+crypto_data	notebooks/python/forecasting_model.py	/^crypto_data = load_all_crypto_data()$/;"	v	line:52	language:Python	access:public
 crypto_pairs	notebooks/python/crypto_exploration.py	/^crypto_pairs = list(itertools.combinations(returns_data.keys(), 2))$/;"	v	line:258	language:Python	access:public
 crypto_pairs	notebooks/python/crypto_exploration_old.py	/^crypto_pairs = list(itertools.combinations(returns_data.keys(), 2))$/;"	v	line:186	language:Python	access:public
 cutoff_idx	src/ewrls/ewma.py	/^    cutoff_idx = window_size(alpha, sum_proportion)$/;"	v	line:309	language:Python	access:public
 data	src/ewrls/ewma.py	/^    data = ((0.5 * np.random.randn(data_n) + 0.5) % 1) * 100$/;"	v	line:285	language:Python	access:public
 data_n	src/ewrls/ewma.py	/^    data_n = 100000000$/;"	v	line:284	language:Python	access:public
+data_processor	notebooks/python/causality_analysis.py	/^data_processor = DataProcessor(data={})$/;"	v	line:117	language:Python	access:public
 date	src/ewrls/settings.py	/^date = datetime.date.today().strftime('%Y%m%d')$/;"	v	line:21	language:Python	access:public
 decide_reset_model	src/ewrls/ewrls.py	/^    def decide_reset_model(self):$/;"	m	line:665	language:Python	class:EWRLSChangePoint	access:public	signature:(self)
 decide_reset_model	src/ewrls/ewrls_noewma_dependency.py	/^    def decide_reset_model(self):$/;"	m	line:665	language:Python	class:EWRLSChangePoint	access:public	signature:(self)
+decompose_returns	notebooks/python/causality_analysis.py	/^def decompose_returns(df: pd.DataFrame) -> pd.DataFrame:$/;"	f	line:286	language:Python	typeref:typename:pd.DataFrame	access:public	signature:(df: pd.DataFrame)
+decomposed_returns	notebooks/python/causality_analysis.py	/^decomposed_returns = decompose_returns(combined_returns)$/;"	v	line:296	language:Python	access:public
 define_data	src/ewrls/tests/test_ewrls.py	/^    def define_data(self, length=1500):$/;"	m	line:14	language:Python	class:MyTestCase	access:public	signature:(self, length=1500)
 delete	src/ewrls/recursive_ols.py	/^    def delete(self, y_remove: np.ndarray, x_remove: np.ndarray):$/;"	m	line:77	language:Python	class:RecursiveOLS	access:public	signature:(self, y_remove: np.ndarray, x_remove: np.ndarray)
 derive_span	src/ewrls/ewrls.py	/^    def derive_span(self):$/;"	m	line:79	language:Python	class:EWRLSRidge	access:public	signature:(self)
@@ -311,8 +334,10 @@ first_diff	src/ewrls/ewrls.py	/^    def first_diff(self, param_tuple=(0.99, 3.5)
 first_diff	src/ewrls/ewrls_noewma_dependency.py	/^    def first_diff(self, param_tuple=(0.99, 3.5)):$/;"	m	line:735	language:Python	class:EWRLSChangePoint	access:public	signature:(self, param_tuple=(0.99, 3.5))
 forecast_fit	src/ewrls/ewrls.py	/^    def forecast_fit(self, param_tuple=(0.99, 3.5)):$/;"	m	line:717	language:Python	class:EWRLSChangePoint	access:public	signature:(self, param_tuple=(0.99, 3.5))
 forecast_fit	src/ewrls/ewrls_noewma_dependency.py	/^    def forecast_fit(self, param_tuple=(0.99, 3.5)):$/;"	m	line:717	language:Python	class:EWRLSChangePoint	access:public	signature:(self, param_tuple=(0.99, 3.5))
+forecast_results	notebooks/python/forecasting_model.py	/^forecast_results = run_ewrls_forecasting(X, y)$/;"	v	line:122	language:Python	access:public
 forecast_vol	src/ewrls/ewrls.py	/^    def forecast_vol(self, span=np.nan):$/;"	m	line:545	language:Python	class:EWRLSRidge	access:public	signature:(self, span=np.nan)
 forecast_vol	src/ewrls/ewrls_noewma_dependency.py	/^    def forecast_vol(self, span=np.nan):$/;"	m	line:545	language:Python	class:EWRLSRidge	access:public	signature:(self, span=np.nan)
+forecasting_data	notebooks/python/forecasting_model.py	/^forecasting_data = create_lagged_features(combined_returns, target_crypto, lags=5)$/;"	v	line:89	language:Python	access:public
 formatter	src/ewrls/settings.py	/^formatter = logging.Formatter($/;"	v	line:25	language:Python	access:public
 generate_prediction	src/ewrls/ewrls.py	/^    def generate_prediction(self, x_vec, ndarray=False):$/;"	m	line:243	language:Python	class:EWRLSRidge	access:public	signature:(self, x_vec, ndarray=False)
 generate_prediction	src/ewrls/ewrls_noewma_dependency.py	/^    def generate_prediction(self, x_vec, ndarray=False):$/;"	m	line:243	language:Python	class:EWRLSRidge	access:public	signature:(self, x_vec, ndarray=False)
@@ -334,9 +359,10 @@ l1_norm	src/ewrls/ewrls_noewma_dependency.py	/^    def l1_norm(self, x: np.array
 l1_subgradient	src/ewrls/ewrls.py	/^    def l1_subgradient(self, x: np.array) -> np.array:$/;"	m	line:1367	language:Python	class:CR_RLS	typeref:typename:np.array	access:public	signature:(self, x: np.array)
 l1_subgradient	src/ewrls/ewrls_noewma_dependency.py	/^    def l1_subgradient(self, x: np.array) -> np.array:$/;"	m	line:1367	language:Python	class:CR_RLS	typeref:typename:np.array	access:public	signature:(self, x: np.array)
 load_all_crypto_data	notebooks/.ipynb_checkpoints/causality_analysis-checkpoint.py	/^def load_all_crypto_data(data_dir="..\/data\/processed\/"):$/;"	f	line:33	language:Python	access:public	signature:(data_dir="../data/processed/")
-load_all_crypto_data	notebooks/python/causality_analysis.py	/^def load_all_crypto_data(data_dir=os.path.join(project_root, "data", "processed")):$/;"	f	line:62	language:Python	access:public	signature:(data_dir=os.path.join(project_root, "data", "processed"))
+load_all_crypto_data	notebooks/python/causality_analysis.py	/^def load_all_crypto_data(data_dir=os.path.join(project_root, "data", "processed")):$/;"	f	line:66	language:Python	access:public	signature:(data_dir=os.path.join(project_root, "data", "processed"))
 load_all_crypto_data	notebooks/python/crypto_exploration.py	/^def load_all_crypto_data(data_dir="..\/..\/data\/processed\/"):$/;"	f	line:115	language:Python	access:public	signature:(data_dir="../../data/processed/")
 load_all_crypto_data	notebooks/python/crypto_exploration_old.py	/^def load_all_crypto_data(data_dir=".\/data\/processed"):$/;"	f	line:34	language:Python	access:public	signature:(data_dir="./data/processed")
+load_all_crypto_data	notebooks/python/forecasting_model.py	/^def load_all_crypto_data(data_dir=os.path.join(project_root, 'data', 'processed')):$/;"	f	line:42	language:Python	access:public	signature:(data_dir=os.path.join(project_root, 'data', 'processed'))
 load_and_prepare_data	examples/granger_analysis.py	/^def load_and_prepare_data(data_dir=".\/data\/processed\/"):$/;"	f	line:9	language:Python	access:public	signature:(data_dir="./data/processed/")
 load_and_prepare_data	examples/tvgc-example.py	/^def load_and_prepare_data(data_dir: str = ".\/data\/processed\/") -> Dict[str, pd.DataFrame]:$/;"	f	line:175	language:Python	typeref:typename:Dict[str,pd.DataFrame]	access:public	signature:(data_dir: str = "./data/processed/")
 load_and_prepare_data	examples/visualize_causality.py	/^def load_and_prepare_data(data_dir=".\/data\/processed\/"):$/;"	f	line:11	language:Python	access:public	signature:(data_dir="./data/processed/")
@@ -364,8 +390,9 @@ main	src/ewrls/ewrls.py	/^def main():$/;"	f	line:1395	language:Python	access:pub
 main	src/ewrls/ewrls_noewma_dependency.py	/^def main():$/;"	f	line:1395	language:Python	access:public	signature:()
 main	src/ewrls/recursive_ols.py	/^def main():$/;"	f	line:214	language:Python	access:public	signature:()
 main	src/ewrls/tests/test_break_detector.py	/^def main():$/;"	f	line:198	language:Python	access:public	signature:()
+mse	notebooks/python/forecasting_model.py	/^mse = mean_squared_error(forecast_results['Actual'], forecast_results['Prediction'])$/;"	v	line:129	language:Python	access:public
 multivariate_results	notebooks/.ipynb_checkpoints/causality_analysis-checkpoint.py	/^multivariate_results = pd.DataFrame({$/;"	v	line:96	language:Python	access:public
-multivariate_results	notebooks/python/causality_analysis.py	/^multivariate_results = pd.DataFrame({"P-Value": test_stats})$/;"	v	line:200	language:Python	access:public
+multivariate_results	notebooks/python/causality_analysis.py	/^multivariate_results = pd.DataFrame({"P-Value": test_stats})$/;"	v	line:226	language:Python	access:public
 normalize_data	src/ewrls/ewrls.py	/^    def normalize_data($/;"	m	line:327	language:Python	class:EWRLSRidge	typeref:typename:Tuple[pd.DataFrame,pd.DataFrame,pd.DataFrame]	access:public	signature:( self, exog, min_sample_length: int = 300, expanding: bool = False, norm_max: float = 0 )
 normalize_data	src/ewrls/ewrls_noewma_dependency.py	/^    def normalize_data($/;"	m	line:327	language:Python	class:EWRLSRidge	typeref:typename:Tuple[pd.DataFrame,pd.DataFrame,pd.DataFrame]	access:public	signature:( self, exog, min_sample_length: int = 300, expanding: bool = False, norm_max: float = 0 )
 np	examples/automated-gc-example.py	/^import numpy as np$/;"	I	line:9	language:Python	access:public	nameref:module:numpy
@@ -375,11 +402,12 @@ np	examples/visualize_causality.py	/^import numpy as np$/;"	I	line:4	language:Py
 np	examples/visualize_results.py	/^import numpy as np$/;"	I	line:36	language:Python	access:public	nameref:module:numpy
 np	notebooks/.ipynb_checkpoints/causality_analysis-checkpoint.py	/^import numpy as np$/;"	I	line:10	language:Python	access:public	nameref:module:numpy
 np	notebooks/.ipynb_checkpoints/crypto_diffs_exploration-checkpoint.py	/^import numpy as np$/;"	I	line:18	language:Python	access:public	nameref:module:numpy
-np	notebooks/python/causality_analysis.py	/^import numpy as np$/;"	I	line:27	language:Python	access:public	nameref:module:numpy
+np	notebooks/python/causality_analysis.py	/^import numpy as np$/;"	I	line:30	language:Python	access:public	nameref:module:numpy
 np	notebooks/python/crypto_diffs_exploration.py	/^import numpy as np$/;"	I	line:18	language:Python	access:public	nameref:module:numpy
 np	notebooks/python/crypto_exploration.py	/^import numpy as np$/;"	I	line:14	language:Python	access:public	nameref:module:numpy
 np	notebooks/python/crypto_exploration_old.py	/^import numpy as np$/;"	I	line:14	language:Python	access:public	nameref:module:numpy
 np	notebooks/python/crypto_qq.py	/^import numpy as np$/;"	I	line:23	language:Python	access:public	nameref:module:numpy
+np	notebooks/python/forecasting_model.py	/^import numpy as np$/;"	I	line:10	language:Python	access:public	nameref:module:numpy
 np	src/analysis/causality.py	/^import numpy as np$/;"	I	line:3	language:Python	access:public	nameref:module:numpy
 np	src/analysis/causality_bad_scipy.py	/^import numpy as np$/;"	I	line:3	language:Python	access:public	nameref:module:numpy
 np	src/analysis/granger_causality.py	/^import numpy as np$/;"	I	line:38	language:Python	access:public	nameref:module:numpy
@@ -398,18 +426,18 @@ np	src/ewrls/tests/test_ewrls.py	/^import numpy as np$/;"	I	line:4	language:Pyth
 np	src/utils/helpers.py	/^import numpy as np$/;"	I	line:3	language:Python	access:public	nameref:module:numpy
 np	src/visualization/causality_viz.py	/^import numpy as np$/;"	I	line:34	language:Python	access:public	nameref:module:numpy
 nx	examples/visualize_results.py	/^import networkx as nx$/;"	I	line:45	language:Python	access:public	nameref:module:networkx
-nx	notebooks/python/causality_analysis.py	/^import networkx as nx$/;"	I	line:26	language:Python	access:public	nameref:module:networkx
+nx	notebooks/python/causality_analysis.py	/^import networkx as nx$/;"	I	line:29	language:Python	access:public	nameref:module:networkx
 nx	src/analysis/causality.py	/^import networkx as nx$/;"	I	line:8	language:Python	access:public	nameref:module:networkx
 nx	src/analysis/causality_bad_scipy.py	/^import networkx as nx$/;"	I	line:9	language:Python	access:public	nameref:module:networkx
 nx	src/visualization/causality_viz.py	/^import networkx as nx$/;"	I	line:38	language:Python	access:public	nameref:module:networkx
 optimal_lag	notebooks/.ipynb_checkpoints/causality_analysis-checkpoint.py	/^test_stats, coef_pvals, optimal_lag = analyzer.run_multivariate_causality(target=target_crypto)$/;"	v	line:91	language:Python	access:public
-optimal_lag	notebooks/python/causality_analysis.py	/^test_stats, coef_pvals, optimal_lag = analyzer.run_multivariate_causality($/;"	v	line:191	language:Python	access:public
+optimal_lag	notebooks/python/causality_analysis.py	/^test_stats, coef_pvals, optimal_lag = analyzer.run_multivariate_causality($/;"	v	line:217	language:Python	access:public
 pa	src/data/data_processor.py	/^import pyarrow as pa$/;"	I	line:6	language:Python	access:public	nameref:module:pyarrow
 pa	src/data/downloader.py	/^import pyarrow as pa$/;"	I	line:6	language:Python	access:public	nameref:module:pyarrow
 pair_to_test	notebooks/.ipynb_checkpoints/causality_analysis-checkpoint.py	/^pair_to_test = ('BTC', 'ETH')$/;"	v	line:107	language:Python	access:public
-pair_to_test	notebooks/python/causality_analysis.py	/^pair_to_test = ("BTCUSDT", "SOLUSDT")$/;"	v	line:234	language:Python	access:public
+pair_to_test	notebooks/python/causality_analysis.py	/^pair_to_test = ("BTCUSDT", "SOLUSDT")$/;"	v	line:260	language:Python	access:public
 pairwise_results	notebooks/.ipynb_checkpoints/causality_analysis-checkpoint.py	/^pairwise_results = analyzer.run_pairwise_causality()$/;"	v	line:74	language:Python	access:public
-pairwise_results	notebooks/python/causality_analysis.py	/^pairwise_results = analyzer.run_pairwise_causality()$/;"	v	line:124	language:Python	access:public
+pairwise_results	notebooks/python/causality_analysis.py	/^pairwise_results = analyzer.run_pairwise_causality()$/;"	v	line:150	language:Python	access:public
 pd	examples/automated-gc-example.py	/^import pandas as pd$/;"	I	line:7	language:Python	access:public	nameref:module:pandas
 pd	examples/automated-gc.py	/^import pandas as pd$/;"	I	line:2	language:Python	access:public	nameref:module:pandas
 pd	examples/granger_analysis.py	/^import pandas as pd$/;"	I	line:3	language:Python	access:public	nameref:module:pandas
@@ -419,11 +447,12 @@ pd	examples/visualize_causality.py	/^import pandas as pd$/;"	I	line:3	language:P
 pd	examples/visualize_results.py	/^import pandas as pd$/;"	I	line:35	language:Python	access:public	nameref:module:pandas
 pd	notebooks/.ipynb_checkpoints/causality_analysis-checkpoint.py	/^import pandas as pd$/;"	I	line:9	language:Python	access:public	nameref:module:pandas
 pd	notebooks/.ipynb_checkpoints/crypto_diffs_exploration-checkpoint.py	/^import pandas as pd$/;"	I	line:19	language:Python	access:public	nameref:module:pandas
-pd	notebooks/python/causality_analysis.py	/^import pandas as pd$/;"	I	line:28	language:Python	access:public	nameref:module:pandas
+pd	notebooks/python/causality_analysis.py	/^import pandas as pd$/;"	I	line:31	language:Python	access:public	nameref:module:pandas
 pd	notebooks/python/crypto_diffs_exploration.py	/^import pandas as pd$/;"	I	line:19	language:Python	access:public	nameref:module:pandas
 pd	notebooks/python/crypto_exploration.py	/^import pandas as pd$/;"	I	line:13	language:Python	access:public	nameref:module:pandas
 pd	notebooks/python/crypto_exploration_old.py	/^import pandas as pd$/;"	I	line:13	language:Python	access:public	nameref:module:pandas
 pd	notebooks/python/crypto_qq.py	/^import pandas as pd$/;"	I	line:24	language:Python	access:public	nameref:module:pandas
+pd	notebooks/python/forecasting_model.py	/^import pandas as pd$/;"	I	line:9	language:Python	access:public	nameref:module:pandas
 pd	src/analysis/causality.py	/^import pandas as pd$/;"	I	line:4	language:Python	access:public	nameref:module:pandas
 pd	src/analysis/causality_bad_scipy.py	/^import pandas as pd$/;"	I	line:4	language:Python	access:public	nameref:module:pandas
 pd	src/analysis/granger_causality.py	/^import pandas as pd$/;"	I	line:39	language:Python	access:public	nameref:module:pandas
@@ -448,7 +477,7 @@ plot_acf_pacf	notebooks/python/crypto_exploration_old.py	/^def plot_acf_pacf(ser
 plot_all_results	examples/visualize_results.py	/^    def plot_all_results(self, save: bool = True) -> None:$/;"	m	line:78	language:Python	class:ResultsVisualizer	typeref:typename:None	access:public	signature:(self, save: bool = True)
 plot_causality_heatmap	src/visualization/causality_viz.py	/^    def plot_causality_heatmap($/;"	m	line:49	language:Python	class:CausalityVisualizer	typeref:typename:None	access:public	signature:( self, causality_results: pd.DataFrame, title: Optional[str] = None )
 plot_causality_network	examples/visualize_results.py	/^    def plot_causality_network(self, save: bool = True) -> None:$/;"	m	line:167	language:Python	class:ResultsVisualizer	typeref:typename:None	access:public	signature:(self, save: bool = True)
-plot_causality_network	notebooks/python/causality_analysis.py	/^def plot_causality_network($/;"	f	line:136	language:Python	access:public	signature:( pairwise_results, title="Significant Granger Causal Relationships" )
+plot_causality_network	notebooks/python/causality_analysis.py	/^def plot_causality_network($/;"	f	line:162	language:Python	access:public	signature:( pairwise_results, title="Significant Granger Causal Relationships" )
 plot_causality_network	src/visualization/causality_viz.py	/^    def plot_causality_network($/;"	m	line:84	language:Python	class:CausalityVisualizer	typeref:typename:None	access:public	signature:( self, causality_results: pd.DataFrame, layout: str = 'spring', min_edge_width: float = 1.0, max_edge_width: float = 5.0, node_size: float = 2000, title: Optional[str] = None )
 plot_ccf	notebooks/python/crypto_exploration.py	/^def plot_ccf(series1, series2, name1, name2, lags=50):$/;"	f	line:224	language:Python	access:public	signature:(series1, series2, name1, name2, lags=50)
 plot_ccf	notebooks/python/crypto_exploration_old.py	/^def plot_ccf(series1, series2, name1, name2, lags=50):$/;"	f	line:146	language:Python	access:public	signature:(series1, series2, name1, name2, lags=50)
@@ -476,11 +505,12 @@ plt	examples/tvgc-example.py	/^import matplotlib.pyplot as plt$/;"	I	line:8	lang
 plt	examples/visualize_results.py	/^import matplotlib.pyplot as plt$/;"	I	line:37	language:Python	access:public	nameref:module:matplotlib.pyplot
 plt	notebooks/.ipynb_checkpoints/causality_analysis-checkpoint.py	/^import matplotlib.pyplot as plt$/;"	I	line:11	language:Python	access:public	nameref:module:matplotlib.pyplot
 plt	notebooks/.ipynb_checkpoints/crypto_diffs_exploration-checkpoint.py	/^import matplotlib.pyplot as plt$/;"	I	line:17	language:Python	access:public	nameref:module:matplotlib.pyplot
-plt	notebooks/python/causality_analysis.py	/^import matplotlib.pyplot as plt$/;"	I	line:25	language:Python	access:public	nameref:module:matplotlib.pyplot
+plt	notebooks/python/causality_analysis.py	/^import matplotlib.pyplot as plt$/;"	I	line:28	language:Python	access:public	nameref:module:matplotlib.pyplot
 plt	notebooks/python/crypto_diffs_exploration.py	/^import matplotlib.pyplot as plt$/;"	I	line:17	language:Python	access:public	nameref:module:matplotlib.pyplot
 plt	notebooks/python/crypto_exploration.py	/^import matplotlib.pyplot as plt$/;"	I	line:15	language:Python	access:public	nameref:module:matplotlib.pyplot
 plt	notebooks/python/crypto_exploration_old.py	/^import matplotlib.pyplot as plt$/;"	I	line:15	language:Python	access:public	nameref:module:matplotlib.pyplot
 plt	notebooks/python/crypto_qq.py	/^import matplotlib.pyplot as plt$/;"	I	line:22	language:Python	access:public	nameref:module:matplotlib.pyplot
+plt	notebooks/python/forecasting_model.py	/^import matplotlib.pyplot as plt$/;"	I	line:11	language:Python	access:public	nameref:module:matplotlib.pyplot
 plt	src/analysis/time_varying_granger.py	/^import matplotlib.pyplot as plt$/;"	I	line:10	language:Python	access:public	nameref:module:matplotlib.pyplot
 plt	src/visualization/causality_viz.py	/^import matplotlib.pyplot as plt$/;"	I	line:36	language:Python	access:public	nameref:module:matplotlib.pyplot
 pq	examples/automated-gc-example.py	/^import pyarrow.parquet as pq$/;"	I	line:8	language:Python	access:public	nameref:module:pyarrow.parquet
@@ -491,7 +521,7 @@ pq	examples/visualize_causality.py	/^import pyarrow.parquet as pq$/;"	I	line:5	l
 pq	examples/visualize_results.py	/^    import pyarrow.parquet as pq$/;"	I	line:310	language:Python	function:main	file:	access:private	nameref:module:pyarrow.parquet
 pq	notebooks/.ipynb_checkpoints/causality_analysis-checkpoint.py	/^import pyarrow.parquet as pq$/;"	I	line:15	language:Python	access:public	nameref:module:pyarrow.parquet
 pq	notebooks/.ipynb_checkpoints/crypto_diffs_exploration-checkpoint.py	/^import pyarrow.parquet as pq$/;"	I	line:20	language:Python	access:public	nameref:module:pyarrow.parquet
-pq	notebooks/python/causality_analysis.py	/^import pyarrow.parquet as pq$/;"	I	line:29	language:Python	access:public	nameref:module:pyarrow.parquet
+pq	notebooks/python/causality_analysis.py	/^import pyarrow.parquet as pq$/;"	I	line:32	language:Python	access:public	nameref:module:pyarrow.parquet
 pq	notebooks/python/crypto_diffs_exploration.py	/^import pyarrow.parquet as pq$/;"	I	line:20	language:Python	access:public	nameref:module:pyarrow.parquet
 pq	notebooks/python/crypto_exploration.py	/^import pyarrow.parquet as pq$/;"	I	line:22	language:Python	access:public	nameref:module:pyarrow.parquet
 pq	notebooks/python/crypto_qq.py	/^import pyarrow.parquet as pq$/;"	I	line:25	language:Python	access:public	nameref:module:pyarrow.parquet
@@ -501,11 +531,13 @@ print_distribution_stats	notebooks/python/crypto_qq.py	/^def print_distribution_
 printstate	src/ewrls/ewrls.py	/^    def printstate(self, log=True):$/;"	m	line:471	language:Python	class:EWRLSRidge	access:public	signature:(self, log=True)
 printstate	src/ewrls/ewrls_noewma_dependency.py	/^    def printstate(self, log=True):$/;"	m	line:471	language:Python	class:EWRLSRidge	access:public	signature:(self, log=True)
 process_data	src/data/data_processor.py	/^    def process_data(self) -> Dict[str, pd.DataFrame]:$/;"	m	line:27	language:Python	class:DataProcessor	typeref:typename:Dict[str,pd.DataFrame]	access:public	signature:(self)
-project_root	notebooks/python/causality_analysis.py	/^    project_root = os.path.abspath(os.path.join(os.getcwd(), "..", ".."))$/;"	v	line:39	language:Python	access:public
+project_root	notebooks/python/causality_analysis.py	/^    project_root = os.path.abspath(os.path.join(os.getcwd(), "..", ".."))$/;"	v	line:42	language:Python	access:public
+project_root	notebooks/python/forecasting_model.py	/^    project_root = os.path.abspath(os.path.join(os.getcwd(), '..', '..'))$/;"	v	line:25	language:Python	access:public
 pseudo_l0_norm	src/ewrls/ewrls.py	/^    def pseudo_l0_norm(self, x: np.array) -> float:$/;"	m	line:1382	language:Python	class:CR_RLS	typeref:typename:float	access:public	signature:(self, x: np.array)
 pseudo_l0_norm	src/ewrls/ewrls_noewma_dependency.py	/^    def pseudo_l0_norm(self, x: np.array) -> float:$/;"	m	line:1382	language:Python	class:CR_RLS	typeref:typename:float	access:public	signature:(self, x: np.array)
 pseudo_l0_subgradient	src/ewrls/ewrls.py	/^    def pseudo_l0_subgradient(self, x: np.array) -> np.array:$/;"	m	line:1375	language:Python	class:CR_RLS	typeref:typename:np.array	access:public	signature:(self, x: np.array)
 pseudo_l0_subgradient	src/ewrls/ewrls_noewma_dependency.py	/^    def pseudo_l0_subgradient(self, x: np.array) -> np.array:$/;"	m	line:1375	language:Python	class:CR_RLS	typeref:typename:np.array	access:public	signature:(self, x: np.array)
+r2	notebooks/python/forecasting_model.py	/^r2 = r2_score(forecast_results['Actual'], forecast_results['Prediction'])$/;"	v	line:130	language:Python	access:public
 random_beta_jump	src/ewrls/tests/test_break_detector.py	/^def random_beta_jump(k_dim, length):$/;"	f	line:132	language:Python	access:public	signature:(k_dim, length)
 renormalize_betas	src/ewrls/ewrls.py	/^    def renormalize_betas(betas, exog_stdev, exog_mean):  # not usedg$/;"	m	line:426	language:Python	class:EWRLSRidge	access:public	signature:(betas, exog_stdev, exog_mean)
 renormalize_betas	src/ewrls/ewrls_noewma_dependency.py	/^    def renormalize_betas(betas, exog_stdev, exog_mean):  # not usedg$/;"	m	line:426	language:Python	class:EWRLSRidge	access:public	signature:(betas, exog_stdev, exog_mean)
@@ -513,7 +545,10 @@ renormalize_data	src/ewrls/ewrls.py	/^    def renormalize_data(normalized_featur
 renormalize_data	src/ewrls/ewrls_noewma_dependency.py	/^    def renormalize_data(normalized_features, exog_stdev, exog_mean):$/;"	m	line:409	language:Python	class:EWRLSRidge	access:public	signature:(normalized_features, exog_stdev, exog_mean)
 report_change_times	src/ewrls/ewrls.py	/^    def report_change_times(self):$/;"	m	line:682	language:Python	class:EWRLSChangePoint	access:public	signature:(self)
 report_change_times	src/ewrls/ewrls_noewma_dependency.py	/^    def report_change_times(self):$/;"	m	line:682	language:Python	class:EWRLSChangePoint	access:public	signature:(self)
+resample_data	src/data/data_processor.py	/^    def resample_data(self, df: pd.DataFrame, frequency: str) -> pd.DataFrame:$/;"	m	line:111	language:Python	class:DataProcessor	typeref:typename:pd.DataFrame	access:public	signature:(self, df: pd.DataFrame, frequency: str)
 resample_data	src/utils/helpers.py	/^def resample_data($/;"	f	line:76	language:Python	typeref:typename:pd.DataFrame	access:public	signature:( data: pd.DataFrame, freq: str, agg_dict: Optional[dict] = None )
+resampled_returns_1h	notebooks/python/causality_analysis.py	/^resampled_returns_1h = combined_returns.copy()$/;"	v	line:122	language:Python	access:public
+resampled_returns_1h	notebooks/python/causality_analysis.py	/^resampled_returns_1h = resampled_returns_1h.resample("1H").last().dropna()$/;"	v	line:124	language:Python	access:public
 reset	src/ewrls/ewrls.py	/^    def reset(self):$/;"	m	line:1022	language:Python	class:EWRLSBatch	access:public	signature:(self)
 reset	src/ewrls/ewrls.py	/^    def reset(self):$/;"	m	line:613	language:Python	class:EWRLSChangePoint	access:public	signature:(self)
 reset	src/ewrls/ewrls.py	/^    def reset(self, span=None, regularization=None):$/;"	m	line:87	language:Python	class:EWRLSRidge	access:public	signature:(self, span=None, regularization=None)
@@ -532,24 +567,27 @@ result	src/ewrls/ewma.py	/^    result = ewma_vectorized_safe(data, alpha)$/;"	v	
 result	src/ewrls/ewma.py	/^    result = ewma_vectorized_safe(data, alpha, chunk_size)$/;"	v	line:307	language:Python	access:public
 result	src/ewrls/ewma.py	/^    result = result[cutoff_idx:]$/;"	v	line:310	language:Python	access:public
 returns	notebooks/.ipynb_checkpoints/causality_analysis-checkpoint.py	/^    returns = pd.DataFrame()$/;"	v	line:54	language:Python	access:public
-returns	notebooks/python/causality_analysis.py	/^    returns = pd.DataFrame()$/;"	v	line:95	language:Python	access:public
+returns	notebooks/python/causality_analysis.py	/^    returns = pd.DataFrame()$/;"	v	line:99	language:Python	access:public
 returns	notebooks/python/crypto_exploration.py	/^    returns = pd.DataFrame()$/;"	v	line:157	language:Python	access:public
 returns	notebooks/python/crypto_exploration_old.py	/^    returns = pd.DataFrame()$/;"	v	line:179	language:Python	access:public
 returns	notebooks/python/crypto_exploration_old.py	/^    returns = pd.DataFrame()$/;"	v	line:73	language:Python	access:public
+returns	notebooks/python/forecasting_model.py	/^    returns = pd.DataFrame()$/;"	v	line:57	language:Python	access:public
 returns_data	notebooks/.ipynb_checkpoints/causality_analysis-checkpoint.py	/^returns_data = {}$/;"	v	line:52	language:Python	access:public
 returns_data	notebooks/.ipynb_checkpoints/crypto_diffs_exploration-checkpoint.py	/^all_data, returns_data = load_and_prepare_data()$/;"	v	line:152	language:Python	access:public
-returns_data	notebooks/python/causality_analysis.py	/^returns_data = {}$/;"	v	line:93	language:Python	access:public
+returns_data	notebooks/python/causality_analysis.py	/^returns_data = {}$/;"	v	line:97	language:Python	access:public
 returns_data	notebooks/python/crypto_diffs_exploration.py	/^all_data, returns_data = load_and_prepare_data()$/;"	v	line:152	language:Python	access:public
 returns_data	notebooks/python/crypto_exploration.py	/^returns_data = {}$/;"	v	line:155	language:Python	access:public
 returns_data	notebooks/python/crypto_exploration_old.py	/^returns_data = {}$/;"	v	line:177	language:Python	access:public
 returns_data	notebooks/python/crypto_exploration_old.py	/^returns_data = {}$/;"	v	line:71	language:Python	access:public
 returns_data	notebooks/python/crypto_qq.py	/^returns_data = load_and_prepare_data()$/;"	v	line:171	language:Python	access:public
+returns_data	notebooks/python/forecasting_model.py	/^returns_data = {}$/;"	v	line:55	language:Python	access:public
 rolling_add	src/ewrls/recursive_ols.py	/^    def rolling_add(self,$/;"	m	line:117	language:Python	class:RecursiveOLS	access:public	signature:(self, y_update: np.ndarray, x_update: np.ndarray, roll_length=np.nan)
 rolling_granger_causality	examples/tvgc-example.py	/^def rolling_granger_causality(y, x, max_lag=5, window_size=500):$/;"	f	line:21	language:Python	access:public	signature:(y, x, max_lag=5, window_size=500)
 rolling_granger_causality	src/analysis/time_varying_granger.py	/^def rolling_granger_causality(y, x, max_lag=5, window_size=500):$/;"	f	line:13	language:Python	access:public	signature:(y, x, max_lag=5, window_size=500)
 rolling_statistics	src/utils/helpers.py	/^def rolling_statistics($/;"	f	line:53	language:Python	typeref:typename:pd.DataFrame	access:public	signature:( series: pd.Series, window: int )
 run_adf_test	src/analysis/stationarity.py	/^    def run_adf_test($/;"	m	line:23	language:Python	class:StationarityTester	typeref:typename:Dict[str,Dict[str,float]]	access:public	signature:( self, regression: str = 'c' )
 run_causality_analysis	examples/run-analysis.py	/^def run_causality_analysis(data: pd.DataFrame) -> None:$/;"	f	line:61	language:Python	typeref:typename:None	access:public	signature:(data: pd.DataFrame)
+run_ewrls_forecasting	notebooks/python/forecasting_model.py	/^def run_ewrls_forecasting(X, y, window_size=1000, span=100, regularization=0.1):$/;"	f	line:100	language:Python	access:public	signature:(X, y, window_size=1000, span=100, regularization=0.1)
 run_kpss_test	src/analysis/stationarity.py	/^    def run_kpss_test($/;"	m	line:50	language:Python	class:StationarityTester	typeref:typename:Dict[str,Dict[str,float]]	access:public	signature:( self, regression: str = 'c' )
 run_multivariate_causality	src/analysis/granger_causality.py	/^    def run_multivariate_causality($/;"	m	line:156	language:Python	class:GrangerCausalityAnalyzer	typeref:typename:Tuple[Dict[str,float],Dict[str,List[float]],int]	access:public	signature:( self, target: str, max_lag: Optional[int] = None )
 run_outlier_analysis	examples/run-analysis.py	/^def run_outlier_analysis(data: pd.DataFrame) -> None:$/;"	f	line:49	language:Python	typeref:typename:None	access:public	signature:(data: pd.DataFrame)
@@ -570,6 +608,7 @@ set_save_history	src/ewrls/ewrls.py	/^    def set_save_history(self, save_histor
 set_save_history	src/ewrls/ewrls_noewma_dependency.py	/^    def set_save_history(self, save_history: bool):$/;"	m	line:842	language:Python	class:StateVariable	access:public	signature:(self, save_history: bool)
 set_start	src/ewrls/ewrls.py	/^    def set_start(self, p, beta=np.array([]), nobs=0):$/;"	m	line:172	language:Python	class:EWRLSRidge	access:public	signature:(self, p, beta=np.array([]), nobs=0)
 set_start	src/ewrls/ewrls_noewma_dependency.py	/^    def set_start(self, p, beta=np.array([]), nobs=0):$/;"	m	line:172	language:Python	class:EWRLSRidge	access:public	signature:(self, p, beta=np.array([]), nobs=0)
+significant_asymmetric_results	notebooks/python/causality_analysis.py	/^significant_asymmetric_results = asymmetric_pairwise_results[$/;"	v	line:305	language:Python	access:public
 simulate_and_store	src/ewrls/tests/test_break_detector.py	/^def simulate_and_store(simulation_func, params=None, span=40, regularisation=5):$/;"	f	line:155	language:Python	access:public	signature:(simulation_func, params=None, span=40, regularisation=5)
 simulate_and_store_breaks	src/ewrls/tests/test_break_detector.py	/^def simulate_and_store_breaks(simulation_func, params=None, span=40, regularisation=5, breaks=[[/;"	f	line:175	language:Python	access:public	signature:(simulation_func, params=None, span=40, regularisation=5, breaks=[[]])
 sm	examples/tvgc-example.py	/^import statsmodels.api as sm$/;"	I	line:11	language:Python	access:public	nameref:module:statsmodels.api
@@ -582,11 +621,12 @@ sns	examples/tvgc-example.py	/^import seaborn as sns$/;"	I	line:9	language:Pytho
 sns	examples/visualize_results.py	/^import seaborn as sns$/;"	I	line:38	language:Python	access:public	nameref:module:seaborn
 sns	notebooks/.ipynb_checkpoints/causality_analysis-checkpoint.py	/^import seaborn as sns$/;"	I	line:12	language:Python	access:public	nameref:module:seaborn
 sns	notebooks/.ipynb_checkpoints/crypto_diffs_exploration-checkpoint.py	/^import seaborn as sns$/;"	I	line:21	language:Python	access:public	nameref:module:seaborn
-sns	notebooks/python/causality_analysis.py	/^import seaborn as sns$/;"	I	line:30	language:Python	access:public	nameref:module:seaborn
+sns	notebooks/python/causality_analysis.py	/^import seaborn as sns$/;"	I	line:33	language:Python	access:public	nameref:module:seaborn
 sns	notebooks/python/crypto_diffs_exploration.py	/^import seaborn as sns$/;"	I	line:21	language:Python	access:public	nameref:module:seaborn
 sns	notebooks/python/crypto_exploration.py	/^import seaborn as sns$/;"	I	line:16	language:Python	access:public	nameref:module:seaborn
 sns	notebooks/python/crypto_exploration_old.py	/^import seaborn as sns$/;"	I	line:16	language:Python	access:public	nameref:module:seaborn
 sns	notebooks/python/crypto_qq.py	/^import seaborn as sns$/;"	I	line:27	language:Python	access:public	nameref:module:seaborn
+sns	notebooks/python/forecasting_model.py	/^import seaborn as sns$/;"	I	line:12	language:Python	access:public	nameref:module:seaborn
 sns	src/visualization/causality_viz.py	/^import seaborn as sns$/;"	I	line:37	language:Python	access:public	nameref:module:seaborn
 span	src/ewrls/ewma.py	/^    span = 5000  # span >= 1$/;"	v	line:287	language:Python	access:public
 standardize_series	src/utils/helpers.py	/^def standardize_series($/;"	f	line:32	language:Python	typeref:typename:pd.Series	access:public	signature:( series: pd.Series, method: str = 'zscore' )
@@ -596,14 +636,15 @@ stats	notebooks/python/crypto_qq.py	/^import scipy.stats as stats$/;"	I	line:26	
 sum_proportion	src/ewrls/ewma.py	/^    sum_proportion = .75  # window covers 75% of contribution to the moving average$/;"	v	line:303	language:Python	access:public
 sum_proportion	src/ewrls/ewma.py	/^    sum_proportion = .99  # window covers 99% of contribution to the moving average$/;"	v	line:301	language:Python	access:public
 sum_proportion	src/ewrls/ewma.py	/^    sum_proportion = .99$/;"	v	line:308	language:Python	access:public
+summarize_asymmetry	notebooks/python/causality_analysis.py	/^def summarize_asymmetry(asymmetric_results: pd.DataFrame) -> pd.DataFrame:$/;"	f	line:319	language:Python	typeref:typename:pd.DataFrame	access:public	signature:(asymmetric_results: pd.DataFrame)
 summarize_tvgc_results	examples/tvgc-example.py	/^def summarize_tvgc_results(tvgc_results):$/;"	f	line:156	language:Python	access:public	signature:(tvgc_results)
 summarize_tvgc_results	src/analysis/time_varying_granger.py	/^def summarize_tvgc_results(tvgc_results):$/;"	f	line:166	language:Python	access:public	signature:(tvgc_results)
 summary	notebooks/.ipynb_checkpoints/causality_analysis-checkpoint.py	/^summary = summarize_tvgc_results({f"{pair_to_test[0]} -> {pair_to_test[1]}": tvgc_results})$/;"	v	line:120	language:Python	access:public
-summary	notebooks/python/causality_analysis.py	/^summary = summarize_tvgc_results($/;"	v	line:247	language:Python	access:public
+summary	notebooks/python/causality_analysis.py	/^summary = summarize_tvgc_results($/;"	v	line:273	language:Python	access:public
 summary_df	notebooks/python/crypto_exploration.py	/^summary_df = create_lead_lag_summary(returns_data)$/;"	v	line:357	language:Python	access:public
 summary_df	notebooks/python/crypto_exploration_old.py	/^summary_df = create_lead_lag_summary(returns_data)$/;"	v	line:280	language:Python	access:public
 summary_stats	notebooks/.ipynb_checkpoints/causality_analysis-checkpoint.py	/^summary_stats = analyzer.get_summary_statistics()$/;"	v	line:82	language:Python	access:public
-summary_stats	notebooks/python/causality_analysis.py	/^summary_stats = analyzer.get_summary_statistics()$/;"	v	line:177	language:Python	access:public
+summary_stats	notebooks/python/causality_analysis.py	/^summary_stats = analyzer.get_summary_statistics()$/;"	v	line:203	language:Python	access:public
 summary_stats	notebooks/python/crypto_exploration.py	/^summary_stats = pd.DataFrame()$/;"	v	line:366	language:Python	access:public
 summary_stats	notebooks/python/crypto_exploration_old.py	/^summary_stats = pd.DataFrame()$/;"	v	line:287	language:Python	access:public
 symbol1	notebooks/python/crypto_exploration.py	/^    symbol1, symbol2 = pair$/;"	v	line:262	language:Python	access:public
@@ -611,17 +652,18 @@ symbol1	notebooks/python/crypto_exploration_old.py	/^    symbol1, symbol2 = pair
 symbol2	notebooks/python/crypto_exploration.py	/^    symbol1, symbol2 = pair$/;"	v	line:262	language:Python	access:public
 symbol2	notebooks/python/crypto_exploration_old.py	/^    symbol1, symbol2 = pair$/;"	v	line:190	language:Python	access:public
 target_crypto	notebooks/.ipynb_checkpoints/causality_analysis-checkpoint.py	/^target_crypto = 'BTC'$/;"	v	line:90	language:Python	access:public
-target_crypto	notebooks/python/causality_analysis.py	/^target_crypto = "BTCUSDT"$/;"	v	line:190	language:Python	access:public
+target_crypto	notebooks/python/causality_analysis.py	/^target_crypto = "BTCUSDT"$/;"	v	line:216	language:Python	access:public
+target_crypto	notebooks/python/forecasting_model.py	/^target_crypto = 'BTCUSDT'$/;"	v	line:86	language:Python	access:public
 test_causality	examples/automated-gc.py	/^    def test_causality(self, x: pd.Series, y: pd.Series) -> Tuple[Dict, int]:$/;"	m	line:19	language:Python	class:AutomatedGrangerCausality	typeref:typename:Tuple[Dict,int]	access:public	signature:(self, x: pd.Series, y: pd.Series)
 test_ewrls	src/ewrls/tests/test_ewrls.py	/^    def test_ewrls(self):$/;"	m	line:40	language:Python	class:MyTestCase	access:public	signature:(self)
 test_expwtls	src/ewrls/tests/test_ewrls.py	/^    def test_expwtls(self):$/;"	m	line:102	language:Python	class:MyTestCase	access:public	signature:(self)
 test_pair_causality	examples/automated-gc-example.py	/^    def test_pair_causality($/;"	m	line:88	language:Python	class:AutomatedGrangerAnalyzer	typeref:typename:Tuple[Dict,int]	access:public	signature:( self, cause: str, effect: str, max_lags: int = 10 )
 test_something	src/ewrls/tests/test_break_detector.py	/^    def test_something(self):$/;"	m	line:16	language:Python	class:MyTestCase	access:public	signature:(self)
 test_stats	notebooks/.ipynb_checkpoints/causality_analysis-checkpoint.py	/^test_stats, coef_pvals, optimal_lag = analyzer.run_multivariate_causality(target=target_crypto)$/;"	v	line:91	language:Python	access:public
-test_stats	notebooks/python/causality_analysis.py	/^test_stats, coef_pvals, optimal_lag = analyzer.run_multivariate_causality($/;"	v	line:191	language:Python	access:public
+test_stats	notebooks/python/causality_analysis.py	/^test_stats, coef_pvals, optimal_lag = analyzer.run_multivariate_causality($/;"	v	line:217	language:Python	access:public
 time_window_split	src/utils/helpers.py	/^def time_window_split($/;"	f	line:122	language:Python	typeref:typename:Tuple[pd.DataFrame,pd.DataFrame,Optional[pd.DataFrame]]	access:public	signature:( data: pd.DataFrame, train_size: Union[float, int], test_size: Optional[Union[float, int]] = None )
 tvgc_results	notebooks/.ipynb_checkpoints/causality_analysis-checkpoint.py	/^tvgc_results = rolling_granger_causality($/;"	v	line:110	language:Python	access:public
-tvgc_results	notebooks/python/causality_analysis.py	/^tvgc_results = rolling_granger_causality($/;"	v	line:237	language:Python	access:public
+tvgc_results	notebooks/python/causality_analysis.py	/^tvgc_results = rolling_granger_causality($/;"	v	line:263	language:Python	access:public
 update	src/ewrls/ewrls.py	/^    def update(self, value, save=True):$/;"	m	line:845	language:Python	class:StateVariable	access:public	signature:(self, value, save=True)
 update	src/ewrls/ewrls.py	/^    def update(self, y: np.ndarray, x: np.ndarray) -> None:$/;"	m	line:1045	language:Python	class:EWRLSBatch	typeref:typename:None	access:public	signature:(self, y: np.ndarray, x: np.ndarray)
 update	src/ewrls/ewrls.py	/^    def update(self, y: np.ndarray, x: np.ndarray) -> None:$/;"	m	line:459	language:Python	class:EWRLSRidge	typeref:typename:None	access:public	signature:(self, y: np.ndarray, x: np.ndarray)
@@ -643,3 +685,4 @@ window	src/ewrls/ewma.py	/^    window = window_size(alpha, sum_proportion)  # = 
 window_size	src/ewrls/ewma.py	/^def window_size(alpha, sum_proportion):$/;"	f	line:277	language:Python	access:public	signature:(alpha, sum_proportion)
 window_size	src/ewrls/ewrls_noewma_dependency.py	/^def window_size(alpha, sum_proportion):$/;"	f	line:1856	language:Python	access:public	signature:(alpha, sum_proportion)
 x	src/ewrls/test_python.py	/^x = np.random.randn(k, 1)$/;"	v	line:5	language:Python	access:public
+y	notebooks/python/forecasting_model.py	/^y = forecasting_data['target']$/;"	v	line:93	language:Python	access:public
