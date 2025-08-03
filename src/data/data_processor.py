@@ -107,3 +107,14 @@ class DataProcessor:
         pq.write_table(table, output_path)
         
         logger.info(f"Saved processed data for {symbol} to {output_path}")
+
+    def resample_data(self, df: pd.DataFrame, frequency: str) -> pd.DataFrame:
+        """Resample data to a specified frequency (e.g., '1H', '1D')."""
+        df_resampled = df.set_index('timestamp').resample(frequency).agg({
+            'open': 'first',
+            'high': 'max',
+            'low': 'min',
+            'close': 'last',
+            'volume': 'sum'
+        }).reset_index()
+        return df_resampled.dropna()

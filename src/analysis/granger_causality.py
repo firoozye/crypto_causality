@@ -175,7 +175,7 @@ class GrangerCausalityAnalyzer:
         # Determine optimal lag order if not specified
         if max_lag is None:
             model = VAR(data)
-            max_lag = model.select_order(maxlags=self.max_lags).aic
+            max_lag = max(1, model.select_order(maxlags=self.max_lags).aic)
 
         # Fit VAR model
         model = VAR(data)
