@@ -107,6 +107,25 @@ combined_returns = pd.DataFrame()
 for symbol, returns in returns_data.items():
     combined_returns[symbol] = returns["returns"]
 combined_returns.index = list(returns_data.values())[0]["timestamp"]
+
+# %% [markdown]
+# ## Resampling Data to Lower Frequencies
+# To investigate causality at longer frequencies, we will resample the 1-minute data.
+
+# %%
+# Initialize DataProcessor (we only need it for the resample_data method)
+data_processor = DataProcessor(data={})
+
+# Resample combined returns to 1-hour frequency
+# Note: This resampling is for the returns data. If you need to resample OHLCV data,
+# you would do it on the individual crypto_data dataframes before calculating returns.
+resampled_returns_1h = combined_returns.resample('1H').last().dropna()
+
+print(f"Shape of 1-minute returns: {combined_returns.shape}")
+print(f"Shape of 1-hour resampled returns: {resampled_returns_1h.shape}")
+
+# Use the resampled data for analysis from now on
+combined_returns = resampled_returns_1h
 # %% [markdown]
 # ## Pairwise Granger Causality
 # We will now perform pairwise Granger causality tests to identify potential causal
@@ -271,7 +290,7 @@ def decompose_returns(df: pd.DataFrame) -> pd.DataFrame:
 
 
 # Decompose combined returns
-decomposed_returns = decompose_returns(combined_returns)
+decomposed_returns = decompose_returns(combined_returns);
 
 # Initialize analyzer for decomposed returns
 asymmetric_analyzer = GrangerCausalityAnalyzer(decomposed_returns, max_lags=10)
@@ -362,7 +381,6 @@ def summarize_asymmetry(asymmetric_results: pd.DataFrame) -> pd.DataFrame:
                 )
 
     return pd.DataFrame(summary_list)
-
 
 asymmetric_summary = summarize_asymmetry(significant_asymmetric_results)
 print("\nSummary of Asymmetric Causal Relationships:")
